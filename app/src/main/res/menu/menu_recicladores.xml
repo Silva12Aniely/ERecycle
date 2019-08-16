@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        app:showAsAction="collapseActionView"
+        android:icon="@drawable/ic_home" />
+    <item
+        android:id="@+id/conta"
+        android:icon="@drawable/ic_account"
+        android:title="Minha Conta"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/quiz"
+        android:icon="@drawable/ic_quiz"
+        android:title="Minha Conta"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/confi"
+        android:icon="@drawable/ic_settings"
+        android:title="Configurações"
+        app:showAsAction="collapseActionView" />
+</menu>

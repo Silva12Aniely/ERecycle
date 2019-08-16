@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         txtLogin = (EditText) findViewById(R.id.txtLogin);
         txtSenha = (EditText) findViewById(R.id.txtSenha);
         btnEntrar = (Button) findViewById(R.id.btnEntrar);
-        btnCadastro = (Button) findViewById(R.id.btnCadastro);
+        btnCadastro = (Button) findViewById(R.id.lCadastro);
 
         btnEntrar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,8 +45,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), Cadastro_Activity.class));
-                finish();
             }
         });
+
     }
 }

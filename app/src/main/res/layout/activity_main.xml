@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:hint="Insira Seu Login"
             android:textColorHint="#ccc"
-            android:padding="2dp"
+            android:padding="5dp"
             android:textSize="25sp"
             android:background="@drawable/etxt_login"/>
 
@@ -53,7 +53,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/etxt_login"
             android:hint="Insira Sua Senha"
-            android:padding="2dp"
+            android:padding="5dp"
             android:textColorHint="#ccc"
             android:textSize="25sp" />
 
@@ -79,7 +79,7 @@
                 android:textAllCaps="true"/>
 
             <Button
-                android:id="@+id/btnCadastro"
+                android:id="@+id/lCadastro"
                 android:layout_width="170dp"
                 android:layout_height="wrap_content"
                 android:text="Cadastro"
