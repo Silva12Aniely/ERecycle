@@ -9,6 +9,15 @@
     android:orientation="vertical"
     tools:context=".Cadastro_Activity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/mCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Cadastro"
+        app:titleTextColor="#fff">
+
+    </androidx.appcompat.widget.Toolbar>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -19,15 +28,6 @@
             android:layout_margin="20dp"
             android:gravity="center_horizontal"
             android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="Cadastro"
-                android:textColor="#fff"
-                android:textSize="40sp"
-                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -43,7 +43,7 @@
                 android:background="@drawable/etxt_login"
                 android:inputType="textPersonName"
                 android:padding="8dp"
-                android:textColor="#ccc"
+                android:textColor="#777777"
                 android:textSize="20sp" />
 
             <TextView
@@ -61,7 +61,7 @@
                 android:background="@drawable/etxt_login"
                 android:inputType="textEmailAddress"
                 android:padding="8dp"
-                android:textColor="#ccc"
+                android:textColor="#777777"
                 android:textSize="20sp" />
 
             <TextView
@@ -77,9 +77,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/etxt_login"
-                android:inputType="numberPassword"
+                android:inputType="textPassword"
                 android:padding="8dp"
-                android:textColor="#ccc"
+                android:textColor="#777777"
                 android:textSize="20sp" />
 
             <TextView
@@ -97,7 +97,7 @@
                 android:background="@drawable/etxt_login"
                 android:inputType="number"
                 android:padding="8dp"
-                android:textColor="#ccc"
+                android:textColor="#777777"
                 android:textSize="20sp" />
 
             <Button

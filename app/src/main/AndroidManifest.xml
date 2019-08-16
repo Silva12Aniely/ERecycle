@@ -9,8 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Recicladores_Activity" android:theme="@style/NoBarSplash"></activity>
-        <activity android:name=".Cadastro_Activity" android:theme="@style/NoBarSplash"/>
+        <activity android:name=".UserActivity" android:theme="@style/NoBarSplash"></activity>
+        <activity
+            android:name=".Recicladores_Activity"
+            android:theme="@style/NoBarSplash" />
+        <activity
+            android:name=".Cadastro_Activity"
+            android:theme="@style/NoBarSplash" />
         <activity
             android:name=".Splash_Activity"
             android:theme="@style/NoBarSplash">

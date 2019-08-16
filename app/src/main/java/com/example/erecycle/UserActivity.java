@@ -10,19 +10,17 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-public class Recicladores_Activity extends AppCompatActivity {
+public class UserActivity extends AppCompatActivity {
     Toolbar toolbar;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.recicladores_layout);
+        setContentView(R.layout.user_layout);
 
-        toolbar = (Toolbar) findViewById(R.id.mRecicladores);
+        toolbar = (Toolbar) findViewById(R.id.musuperfil);
 
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
     }
 
     @Override
@@ -34,7 +32,7 @@ public class Recicladores_Activity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == android.R.id.home) {
-            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+            startActivity(new Intent(getApplicationContext(), Recicladores_Activity.class));
             finish();
         }
 
@@ -42,18 +40,17 @@ public class Recicladores_Activity extends AppCompatActivity {
             case R.id.mhome:
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
                 finish();
-            break;
+                break;
             case R.id.mconta:
-//                Toast.makeText(getApplicationContext(), "Você já esta na pagina de usúario.", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(getApplicationContext(), UserActivity.class));
                 finish();
-            break;
+                break;
             case R.id.mquiz:
                 Toast.makeText(getApplicationContext(), "Quiz", Toast.LENGTH_LONG).show();
-            break;
+                break;
             case R.id.mconfi:
                 Toast.makeText(getApplicationContext(), "Configurações", Toast.LENGTH_LONG).show();
-            break;
+                break;
         }
         return super.onOptionsItemSelected(item);
     }
@@ -63,3 +60,4 @@ public class Recicladores_Activity extends AppCompatActivity {
         super.onBackPressed();
     }
 }
+

@@ -4,18 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Recicladores_Activity"
+    android:background="@drawable/background"
     android:orientation="vertical"
-    android:background="#1F2B20">
+    tools:context=".Recicladores_Activity">
 
     <androidx.appcompat.widget.Toolbar
+        android:id="@+id/mRecicladores"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:title="E Recycle"
         app:titleTextColor="#fff">
 
     </androidx.appcompat.widget.Toolbar>
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#fff"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -25,29 +29,32 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="180dp"
-            android:background="#395A3A"/>
+            android:background="#395A3A" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Recicladores"
+            android:layout_marginBottom="10sp"
             android:gravity="center"
+            android:text="@string/recicladores"
             android:textColor="#fff"
-            android:textSize="28sp"
-            android:layout_marginBottom="10sp"/>
+            android:textSize="28sp" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/ic_person"
-            android:text="Rosenildo"
-            android:gravity="start"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_person"
+            android:drawableRight="@drawable/ic_message"
             android:gravity="start"
-            android:text="Rosenildo" />
+            android:text="@string/rosenildo" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_person"
+
+            android:drawableRight="@drawable/ic_message"
+            android:gravity="start"
+            android:text="@string/jack" />
     </LinearLayout>
 </LinearLayout>

@@ -23,7 +23,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login:"
+            android:text="@string/login"
             android:layout_marginBottom="5dp"
             android:textColor="#fff"
             android:textSize="20sp"/>
@@ -32,9 +32,10 @@
             android:id="@+id/txtLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Insira Seu Login"
+            android:hint="@string/insira_seu_login"
             android:textColorHint="#ccc"
             android:padding="5dp"
+            android:inputType="textPersonName"
             android:textSize="25sp"
             android:background="@drawable/etxt_login"/>
 
@@ -43,7 +44,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="5dp"
-            android:text="Senha:"
+            android:text="@string/senha"
             android:textColor="#fff"
             android:textSize="20sp" />
 
@@ -51,8 +52,9 @@
             android:id="@+id/txtSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="textPassword"
             android:background="@drawable/etxt_login"
-            android:hint="Insira Sua Senha"
+            android:hint="@string/insira_sua_senha"
             android:padding="5dp"
             android:textColorHint="#ccc"
             android:textSize="25sp" />
@@ -62,7 +64,7 @@
             android:layout_height="wrap_content"
             android:textSize="15sp"
             android:textColor="#DD2C00"
-            android:text="Esqueci Minha Senha"
+            android:text="@string/esqueci_minha_senha"
             android:gravity="center_horizontal"
             android:layout_marginTop="10dp" />
 
@@ -75,24 +77,25 @@
                 android:id="@+id/btnEntrar"
                 android:layout_width="170dp"
                 android:layout_height="wrap_content"
-                android:text="Entrar"
+                android:text="@string/entrar"
                 android:textAllCaps="true"/>
 
             <Button
                 android:id="@+id/lCadastro"
                 android:layout_width="170dp"
                 android:layout_height="wrap_content"
-                android:text="Cadastro"
+                android:text="@string/cadastro"
                 android:textAllCaps="true"
-                android:layout_toRightOf="@id/btnEntrar"/>
+                android:layout_toRightOf="@id/btnEntrar"
+                android:layout_toEndOf="@id/btnEntrar" />
         </RelativeLayout>
         <TextView
-            android:layout_width="300dp"
+            android:layout_width="330dp"
             android:layout_height="match_parent"
-            android:text="E-Recycle® Todos os Direitos Reservados. 2019"
+            android:text="@string/e_recycle_todos_os_direitos_reservados_2019"
             android:textColor="#fff"
-            android:textSize="12sp"
+            android:textSize="15sp"
             android:gravity="center"
-            android:layout_marginTop="25dp"/>
+            android:layout_marginTop="30dp"/>
     </LinearLayout>
 </LinearLayout>
