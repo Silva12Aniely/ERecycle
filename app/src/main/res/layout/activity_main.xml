@@ -11,7 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="40dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:gravity="center">
 
         <ImageView
             android:layout_width="250dp"
@@ -68,7 +69,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp">
+            android:layout_marginTop="20dp">
 
             <Button
                 android:id="@+id/btnEntrar"
@@ -85,5 +86,13 @@
                 android:textAllCaps="true"
                 android:layout_toRightOf="@id/btnEntrar"/>
         </RelativeLayout>
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:text="E-Recycle® Todos os Direitos Reservados. 2019"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginTop="25dp"/>
     </LinearLayout>
 </LinearLayout>

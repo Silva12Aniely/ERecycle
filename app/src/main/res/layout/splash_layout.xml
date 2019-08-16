@@ -19,4 +19,13 @@
         android:layout_height="100dp"
         android:layout_marginTop="50dp"/>
 
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="E-Recycle® Todos os Direitos Reservados. 2019"
+        android:textColor="#fff"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:layout_marginTop="50dp"/>
+
 </LinearLayout>
