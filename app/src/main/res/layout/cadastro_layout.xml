@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1F2B20"
+    android:background="@drawable/background"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".Cadastro_Activity">
@@ -15,8 +15,11 @@
         android:layout_height="wrap_content"
         app:title="Cadastro"
         app:titleTextColor="#fff">
-
     </androidx.appcompat.widget.Toolbar>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#fff"/>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -27,12 +30,13 @@
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:gravity="center_horizontal"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_gravity="center">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nome:"
+                android:text="@string/nome"
                 android:textColor="#fff"
                 android:textSize="28sp" />
 
@@ -50,7 +54,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="E-mail:"
+                android:text="@string/e_mail"
                 android:textColor="#fff"
                 android:textSize="28sp" />
 
@@ -68,7 +72,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Senha:"
+                android:text="@string/senha"
                 android:textColor="#fff"
                 android:textSize="28sp" />
 
@@ -86,7 +90,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Telefone:"
+                android:text="@string/telefone"
                 android:textColor="#fff"
                 android:textSize="28sp" />
 
@@ -105,10 +109,10 @@
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
-                android:text="Cadastrar"
+                android:text="@string/cadastrar"
                 android:textAllCaps="true"
-                android:textSize="18sp" />
-
+                android:textSize="18sp"
+                android:background="@drawable/btn_entrar"/>
 
         </LinearLayout>
     </ScrollView>

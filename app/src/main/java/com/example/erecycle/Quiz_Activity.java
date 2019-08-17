@@ -8,19 +8,34 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
-public class UserActivity extends AppCompatActivity {
+public class Quiz_Activity extends AppCompatActivity {
     Toolbar toolbar;
+    Button btnStart;
+    LinearLayout linearLayout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.user_layout);
+        setContentView(R.layout.quiz_layout);
 
-        toolbar = (Toolbar) findViewById(R.id.musuperfil);
+        toolbar = (Toolbar) findViewById(R.id.mQuiz);
+        btnStart = (Button) findViewById(R.id.btnStart);
+        linearLayout = (LinearLayout) findViewById(R.id.idPerguntas);
 
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        btnStart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(), "3,2,1...", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @Override
@@ -31,11 +46,6 @@ public class UserActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        if (item.getItemId() == android.R.id.home) {
-            startActivity(new Intent(getApplicationContext(), Recicladores_Activity.class));
-            finish();
-        }
-
         switch (item.getItemId()) {
             case R.id.mhome:
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
@@ -53,6 +63,7 @@ public class UserActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Configurações", Toast.LENGTH_LONG).show();
                 break;
         }
+
         return super.onOptionsItemSelected(item);
     }
 
@@ -61,4 +72,3 @@ public class UserActivity extends AppCompatActivity {
         super.onBackPressed();
     }
 }
-

@@ -7,11 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnEntrar, btnCadastro;
+    Button btnEntrar;
     EditText txtLogin, txtSenha;
+    TextView lblcadastre;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         txtLogin = (EditText) findViewById(R.id.txtLogin);
         txtSenha = (EditText) findViewById(R.id.txtSenha);
         btnEntrar = (Button) findViewById(R.id.btnEntrar);
-        btnCadastro = (Button) findViewById(R.id.lCadastro);
+        lblcadastre = (TextView) findViewById(R.id.lblcadastre);
 
         btnEntrar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-        btnCadastro.setOnClickListener(new View.OnClickListener() {
+        lblcadastre.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), Cadastro_Activity.class));
