@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detalhes_recicla_Activity"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/mD_recicla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Reciclador"
+        app:titleTextColor="#fff">
+
+    </androidx.appcompat.widget.Toolbar>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#fff"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgReciclador"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/ic_account"/>
+
+            <TextView
+                android:id="@+id/nome_recicla"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="Nome Reciclador"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="30sp"
+                android:layout_toRightOf="@id/imgReciclador"
+                android:layout_above="@id/ratingRecicla"/>
+
+            <TextView
+                android:id="@+id/lblAvalicao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Avaliação"
+                android:paddingLeft="22dp"
+                android:textSize="30sp"
+                android:layout_marginTop="5dp"
+                android:textColor="#fff"
+                android:layout_below="@id/imgReciclador"/>
+            <RatingBar
+                android:id="@+id/ratingRecicla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:layout_toRightOf="@id/lblAvalicao"
+                android:layout_below="@id/imgReciclador"
+                android:paddingLeft="10dp"/>
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/lblEnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="28sp"
+            android:drawableLeft="@drawable/ic_location"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:text="Endereço"/>
+
+        <EditText
+            android:id="@+id/txtEnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblEnd"
+            android:backgroundTint="#fff"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/lblTel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtEnd"
+            android:drawableLeft="@drawable/ic_phone"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:text="Telefone"
+            android:textColor="#fff"
+            android:textSize="28sp" />
+
+        <EditText
+            android:id="@+id/txtTel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblTel"
+            android:backgroundTint="#fff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/lblEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTel"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:text="E-mail"
+            android:textColor="#fff"
+            android:textSize="28sp" />
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblEmail"
+            android:backgroundTint="#fff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</LinearLayout>

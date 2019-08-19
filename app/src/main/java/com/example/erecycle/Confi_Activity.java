@@ -8,34 +8,20 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.Toast;
 
-public class Quiz_Activity extends AppCompatActivity {
+public class Confi_Activity extends AppCompatActivity {
     Toolbar toolbar;
-    Button btnStart;
-    LinearLayout linearLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.quiz_layout);
+        setContentView(R.layout.confi_layout);
 
-        toolbar = (Toolbar) findViewById(R.id.mQuiz);
-        btnStart = (Button) findViewById(R.id.btnStart);
-        linearLayout = (LinearLayout) findViewById(R.id.idPerguntas);
+        toolbar = (Toolbar) findViewById(R.id.mConfi);
 
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-        btnStart.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "3,2,1...", Toast.LENGTH_SHORT).show();
-            }
-        });
     }
 
     @Override
@@ -46,10 +32,6 @@ public class Quiz_Activity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        if (item.getItemId() == android.R.id.home) {
-            startActivity(new Intent(getApplicationContext(), Recicladores_Activity.class));
-            finish();
-        }
         switch (item.getItemId()) {
             case R.id.mhome:
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
@@ -64,10 +46,10 @@ public class Quiz_Activity extends AppCompatActivity {
                 finish();
                 break;
             case R.id.mconfi:
-                Toast.makeText(getApplicationContext(), "Configurações", Toast.LENGTH_LONG).show();
+                startActivity(new Intent(getApplicationContext(), Confi_Activity.class));
+                finish();
                 break;
         }
-
         return super.onOptionsItemSelected(item);
     }
 

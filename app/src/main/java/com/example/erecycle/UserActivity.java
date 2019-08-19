@@ -42,8 +42,7 @@ public class UserActivity extends AppCompatActivity {
                 finish();
                 break;
             case R.id.mconta:
-                startActivity(new Intent(getApplicationContext(), UserActivity.class));
-                finish();
+                Toast.makeText(getApplicationContext(), "Você já está no seu perfil.", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.mquiz:
                 startActivity(new Intent(getApplicationContext(), Quiz_Activity.class));

@@ -34,6 +34,7 @@
             android:background="@drawable/ic_account" />
 
         <TextView
+            android:id="@+id/idUpld"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Upload"
@@ -55,7 +56,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="5dp"
             android:text="Usuario@erecycle.com.br"
             android:textAlignment="center"
             android:textColor="#fff"
@@ -129,9 +130,17 @@
                     android:backgroundTint="#0D9412"
                     android:hint="Telefone"
                     android:textColorHint="#0D9412"
-                    android:textSize="22sp"
-                    android:layout_marginBottom="10dp"/>
-
+                    android:textSize="22sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sair"
+                    android:textSize="18sp"
+                    android:layout_below="@id/edtTel"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="#0D9412"/>
             </RelativeLayout>
         </ScrollView>
     </LinearLayout>

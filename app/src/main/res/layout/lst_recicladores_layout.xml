@@ -11,27 +11,31 @@
         android:id="@+id/lst_dados"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp">
+        android:layout_margin="20dp">
 
         <Button
-            android:id="@+id/rRosenildo"
+            android:id="@+id/lstReciclas"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/ic_person"
             android:drawableRight="@drawable/ic_message"
             android:gravity="start"
-            android:text="@string/rosenildo" />
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:text="@string/rosenildo"
+            android:padding="15dp"
+            android:background="#ccc"/>
 
-        <Button
-            android:id="@+id/rJack"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/rRosenildo"
+        <!--<Button-->
+            <!--android:id="@+id/rJack"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/rRosenildo"-->
 
-            android:drawableLeft="@drawable/ic_person"
-            android:drawableRight="@drawable/ic_message"
-            android:gravity="start"
-            android:text="@string/jack" />
+            <!--android:drawableLeft="@drawable/ic_person"-->
+            <!--android:drawableRight="@drawable/ic_message"-->
+            <!--android:gravity="start"-->
+            <!--android:text="@string/jack" />-->
 
     </RelativeLayout>
 </RelativeLayout>

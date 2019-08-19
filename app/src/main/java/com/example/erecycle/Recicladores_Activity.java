@@ -12,12 +12,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
 public class Recicladores_Activity extends AppCompatActivity {
     Toolbar toolbar;
     ListView listView;
+//    Button lstReciclas;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,14 @@ public class Recicladores_Activity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         listView = (ListView) findViewById(R.id.lstRecicladores);
+//        lstReciclas = (Button) findViewById(R.id.lstReciclas);
+//
+//        lstReciclas.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(getApplicationContext(), "Cliquei aqui!", Toast.LENGTH_SHORT).show();
+//            }
+//        });
 
         CustomAdapter customAdapter = new CustomAdapter();
         listView.setAdapter(customAdapter);
@@ -41,6 +51,7 @@ public class Recicladores_Activity extends AppCompatActivity {
 //                startActivity(intent);
             }
         });
+
     }
     private class CustomAdapter extends BaseAdapter {
 
@@ -75,8 +86,9 @@ public class Recicladores_Activity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == android.R.id.home) {
-            startActivity(new Intent(getApplicationContext(), MainActivity.class));
-            finish();
+//            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+//            finish();
+            onBackPressed();
         }
 
         switch (item.getItemId()) {
@@ -94,7 +106,8 @@ public class Recicladores_Activity extends AppCompatActivity {
                 finish();
             break;
             case R.id.mconfi:
-                Toast.makeText(getApplicationContext(), "Configurações", Toast.LENGTH_LONG).show();
+                startActivity(new Intent(getApplicationContext(), Confi_Activity.class));
+                finish();
             break;
         }
         return super.onOptionsItemSelected(item);
