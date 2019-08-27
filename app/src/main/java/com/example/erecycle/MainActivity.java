@@ -1,7 +1,5 @@
 package com.example.erecycle;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -10,10 +8,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class MainActivity extends AppCompatActivity {
-    Button btnEntrar;
+    Button btnEntrar, btnSair;
     EditText txtLogin, txtSenha;
-    TextView lblcadastre;
+    TextView lblcadastre, lblEsqSenha;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +23,9 @@ public class MainActivity extends AppCompatActivity {
         txtLogin = (EditText) findViewById(R.id.txtLogin);
         txtSenha = (EditText) findViewById(R.id.txtSenha);
         btnEntrar = (Button) findViewById(R.id.btnEntrar);
+        btnSair = (Button) findViewById(R.id.btnSair);
         lblcadastre = (TextView) findViewById(R.id.lblcadastre);
+        lblEsqSenha = (TextView) findViewById(R.id.lblEsqSenha);
 
         btnEntrar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,10 +46,25 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        btnSair.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
         lblcadastre.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), Cadastro_Activity.class));
+            }
+        });
+
+        lblEsqSenha.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(), "Verifique seu E-mail", Toast.LENGTH_SHORT).show();
             }
         });
 

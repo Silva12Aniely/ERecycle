@@ -1,12 +1,8 @@
 <resources>
     <string name="app_name">E Recycle</string>
-    <string name="login">Login:</string>
-    <string name="insira_seu_login">Insira Seu Login</string>
-    <string name="senha">Senha:</string>
-    <string name="insira_sua_senha">Insira Sua Senha</string>
     <string name="entrar">Entrar</string>
     <string name="cadastro">Cadastro</string>
-    <string name="e_recycle_todos_os_direitos_reservados_2019">E-Recycle® Todos os Direitos Reservados. 2019</string>
+    <string name="e_recycle_todos_os_direitos_reservados_2019">E-Recycle© Todos os Direitos Reservados. 2019</string>
     <string name="rosenildo">Rosenildo</string>
     <string name="jack">Jack</string>
     <string name="recicladores">Recicladores</string>
@@ -15,6 +11,8 @@
     <string name="telefone">Telefone:</string>
     <string name="cadastrar">Cadastrar</string>
     <string name="cadastre_se">Cadastre-se</string>
-    <string name="esqueceu_a_senha">Esqueceu a senha?</string>
-    <string name="n_o_tem_uma_conta">Não tem uma conta?</string>
+    <string name="esqueci_a_senha">Esqueci a senha</string>
+    <string name="login">Login</string>
+    <string name="senha">Senha</string>
+    <string name="sair">Sair</string>
 </resources>
